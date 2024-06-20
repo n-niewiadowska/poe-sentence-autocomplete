@@ -1,2 +1,3 @@
 */__pycache__
-*/*.keras
+/__pycache__
+/models

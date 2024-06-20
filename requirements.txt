@@ -1,0 +1,8 @@
+keras
+numpy
+nltk
+scikit-learn
+matplotlib
+wordcloud
+transformers
+torch

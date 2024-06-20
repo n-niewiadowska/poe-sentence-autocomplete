@@ -23,5 +23,5 @@ def train_lstm(X, y):
 	model.compile(loss='categorical_crossentropy', optimizer='adam')
 
 	checkpoint = ModelCheckpoint("models/lstm-model-{epoch:02d}-{loss:.4f}.keras", monitor='loss', verbose=1, save_best_only=True, mode='min')
-	# model.fit(X, y, epochs=66, initial_epoch=65, batch_size=128, callbacks=[checkpoint])
-	model.fit(X, y, epochs=66, batch_size=128, callbacks=callbacks_list)
+	# model.fit(X, y, epochs=65, initial_epoch=64, batch_size=128, callbacks=[checkpoint])
+	model.fit(X, y, epochs=65, batch_size=128, callbacks=[checkpoint])
